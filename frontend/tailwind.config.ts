@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "govt_bg": 'url("/p1.jpg")'
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
