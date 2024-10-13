@@ -1,9 +1,7 @@
-import Link from "next/link";
+"use client";
 
 export default function Home() {
-  return (
-    <div>
-      <Link href={"/login"}>Plea</Link>
-    </div>
-  );
+    return (
+        <div></div>
+    );
 }
