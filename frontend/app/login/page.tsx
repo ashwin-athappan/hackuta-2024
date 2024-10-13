@@ -1,8 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import React, {useState} from "react";
 
 export default function Login() {
+
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
     return (
         <div className="bg-govt_bg min-h-screen bg-cover bg-center ">
                    <div className="flex justify-center container mx-auto my-auto w-screen h-screen items-center flex-col ">
@@ -14,6 +19,7 @@ export default function Login() {
                     <div className="w-3/4 mb-6">
                         <label htmlFor="email" className="text-black sr-only">Email</label>
                         <input
+                            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
                             type="email"
                             name="email"
                             id="email"
@@ -26,6 +32,7 @@ export default function Login() {
                     <div className="w-3/4 mb-6">
                         <label htmlFor="password" className="text-black sr-only">Password</label>
                         <input
+                            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
                             type="password"
                             name="password"
                             id="password"
