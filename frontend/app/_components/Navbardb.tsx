@@ -26,8 +26,9 @@ export default function Navbardb() {
 
                     <div className="hidden md:flex items-center space-x-1">
                         <div className="hidden md:flex items-center space-x-1">
-                            <a href="#" className="py-5 px-3 text-white hover:text-gray-900">Contact us</a>
-                            <a href="#" className="py-5 px-3 text-white hover:text-gray-900">My Profile</a>
+                        <a href="/dboarduser" className="py-5 px-3 text-white hover:text-gray-900">Home</a>
+                            <a href="/contact" className="py-5 px-3 text-white hover:text-gray-900">Contact us</a>
+                            <a href="/myuser" className="py-5 px-3 text-white hover:text-gray-900">My Profile</a>
                         </div>
                         <a href="/login"
                            className="py-2 px-3 bg-white hover:bg-black text-black hover:text-white rounded transition duration-300">Logout</a>
@@ -46,8 +47,9 @@ export default function Navbardb() {
                 </div>
             </div>
             <div className="mobile-menu hidden md:hidden">
-                <a href="#" className="text-black block py-2 px-4 text-sm hover:bg-gray-200">Contact us</a>
-                <a href="#" className="text-black block py-2 px-4 text-sm hover:bg-gray-200">My Profile</a>
+                <a href="/dboarduser" className="text-black block py-2 px-4 text-sm hover:bg-gray-200">Home</a>
+                <a href="/contact" className="text-black block py-2 px-4 text-sm hover:bg-gray-200">Contact us</a>
+                <a href="/myuser" className="text-black block py-2 px-4 text-sm hover:bg-gray-200">My Profile</a>
                 <a href="/login" className="text-black block py-2 px-4 text-sm hover:bg-gray-200">Logout</a>
             </div>
         </nav>

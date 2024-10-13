@@ -26,7 +26,7 @@ export default function Navbar() {
 
                     <div className="hidden md:flex items-center space-x-1">
                         <div className="hidden md:flex items-center space-x-1">
-                            <a href="#" className="py-5 px-3 text-white hover:text-gray-900">Contact Us</a>
+                            <a href="/contact" className="py-5 px-3 text-white hover:text-gray-900">Contact Us</a>
                         </div>
                         <a href="/login"
                            className="py-2 px-3 bg-white hover:bg-black text-black hover:text-white rounded transition duration-300">Login</a>
@@ -47,7 +47,7 @@ export default function Navbar() {
                 </div>
             </div>
             <div className="mobile-menu hidden md:hidden">
-                <a href="#" className="text-black block py-2 px-4 text-sm hover:bg-gray-200">Contact Us</a>
+                <a href="/contact" className="text-black block py-2 px-4 text-sm hover:bg-gray-200">Contact Us</a>
                 <a href="/login" className="text-black block py-2 px-4 text-sm hover:bg-gray-200">Login</a>
                 <a href="/signup" className="text-black block py-2 px-4 text-sm hover:bg-gray-200">Signup</a>
             </div>

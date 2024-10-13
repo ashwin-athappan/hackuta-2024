@@ -96,46 +96,46 @@ export default function Home() {
             {/* Developer 1 */}
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <img
-                src="/dev1.png" // Replace with developer 1's image path
+                src="/dhanush.jpg" // Replace with developer 1's image path
                 alt="Alice Johnson"
                 className="w-24 h-24 rounded-full mx-auto mb-4"
               />
-              <h3 className="text-xl text-blue-500 font-semibold mb-2">Alice Johnson</h3>
+              <h3 className="text-xl text-blue-500 font-semibold mb-2">Dhanush Srinivas</h3>
               <p className="text-gray-600">Frontend Developer</p>
               <p className="text-gray-500">Passionate about creating seamless user experiences.</p>
             </div>
             {/* Developer 2 */}
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <img
-                src="/dev2.png" // Replace with developer 2's image path
+                src="/ashwin.jpg" // Replace with developer 2's image path
                 alt="Brian Smith"
                 className="w-24 h-24 rounded-full mx-auto mb-4"
               />
-              <h3 className="text-xl text-blue-500 font-semibold mb-2">Brian Smith</h3>
-              <p className="text-gray-600">Backend Developer</p>
-              <p className="text-gray-500">Expert in database management and server-side logic.</p>
+              <h3 className="text-xl text-blue-500 font-semibold mb-2">Ashwin Atthappan</h3>
+              <p className="text-gray-600"> UI/UX Designer</p>
+              <p className="text-gray-500">Committed to delivering engaging and user-friendly designs.</p>
             </div>
             {/* Developer 3 */}
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <img
-                src="/dev3.png" // Replace with developer 3's image path
+                src="/shreyas.png" // Replace with developer 3's image path
                 alt="Catherine Lee"
                 className="w-24 h-24 rounded-full mx-auto mb-4"
               />
-              <h3 className="text-xl text-blue-500 font-semibold mb-2">Catherine Lee</h3>
+              <h3 className="text-xl text-blue-500 font-semibold mb-2">Sreyas R S</h3>
               <p className="text-gray-600">Machine Learning Engineer</p>
               <p className="text-gray-500">Focused on AI algorithms to enhance platform performance.</p>
             </div>
             {/* Developer 4 */}
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <img
-                src="/dev4.png" // Replace with developer 4's image path
+                src="/prajwal.png" // Replace with developer 4's image path
                 alt="David Kim"
                 className="w-24 h-24 rounded-full mx-auto mb-4"
               />
-              <h3 className="text-xl text-blue-500 font-semibold mb-2">David Kim</h3>
-              <p className="text-gray-600">UI/UX Designer</p>
-              <p className="text-gray-500">Committed to delivering engaging and user-friendly designs.</p>
+              <h3 className="text-xl text-blue-500 font-semibold mb-2">Prajwal Hulamani</h3>
+              <p className="text-gray-600">Backend Developer</p>
+              <p className="text-gray-500">Expert in database management and server-side logic.</p>
             </div>
           </div>
         </div>
