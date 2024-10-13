@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import React, {useState} from "react";
+import Navbar from "../_components/Navbar/Navbar";
 
 export default function Login() {
 
@@ -9,6 +10,8 @@ export default function Login() {
     const [password, setPassword] = useState("");
 
     return (
+        <>
+        <Navbar />
         <div className="bg-govt_bg min-h-screen bg-cover bg-center ">
                    <div className="flex justify-center container mx-auto my-auto w-screen h-screen items-center flex-col ">
 
@@ -63,5 +66,6 @@ export default function Login() {
                 </div>
             </div>
         </div>
+        </>
     );
 }

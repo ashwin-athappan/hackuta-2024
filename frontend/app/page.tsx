@@ -1,9 +1,11 @@
 // pages/index.js
 
 import React from "react";
-
+import Navbar from "@/app/_components/Navbar/Navbar";
 export default function Home() {
   return (
+    <>
+    <Navbar/>
     <div className="bg-gray-100 min-h-screen">
       {/* Intro Section */}
       <section className="bg-white py-20">
@@ -32,11 +34,7 @@ export default function Home() {
 
           {/* Image Section */}
           <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
-            <img
-              src="/intro-image.png" // Replace with your image path
-              alt="AI Housing Detection"
-              className="w-full rounded-lg shadow-lg"
-            />
+            <img src="/pic.png" alt="AI Housing Detection" className="w-full rounded-lg shadow-lg"/>
           </div>
         </div>
       </section>
@@ -44,26 +42,26 @@ export default function Home() {
       {/* Features Section */}
       <section id="features" className="py-20 bg-gray-200">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+          <h2 className="text-3xl font-bold text-center text-blue-600 mb-12">
             Key Features
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <h3 className="text-xl font-semibold mb-2">AI Risk Assessment</h3>
+              <h3 className="text-xl text-blue-500 font-semibold mb-2">AI Risk Assessment</h3>
               <p className="text-gray-600">
                 Our advanced algorithms analyze tenant behaviors to identify
                 potential risks and unauthorized subletting.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <h3 className="text-xl font-semibold mb-2">Real-Time Alerts</h3>
+              <h3 className="text-xl text-blue-500 font-semibold mb-2">Real-Time Alerts</h3>
               <p className="text-gray-600">
                 Get instant notifications about lease violations and risk
                 assessments to take prompt action.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <h3 className="text-xl font-semibold mb-2">User-Friendly Dashboard</h3>
+              <h3 className="text-xl text-blue-500 font-semibold mb-2">User-Friendly Dashboard</h3>
               <p className="text-gray-600">
                 Manage your properties and view risk reports through an intuitive
                 dashboard designed for ease of use.
@@ -76,7 +74,7 @@ export default function Home() {
       {/* Benefits Section */}
       <section className="py-20">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+          <h2 className="text-3xl font-bold text-center text-blue-500 mb-12">
             Why Choose Us?
           </h2>
           <ul className="list-disc list-inside text-lg text-gray-600 space-y-4">
@@ -91,7 +89,7 @@ export default function Home() {
       {/* About Us Section */}
       <section className="py-20 bg-gray-200">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+          <h2 className="text-3xl font-bold text-center text-blue-500 mb-12">
             About Us
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -102,7 +100,7 @@ export default function Home() {
                 alt="Alice Johnson"
                 className="w-24 h-24 rounded-full mx-auto mb-4"
               />
-              <h3 className="text-xl font-semibold mb-2">Alice Johnson</h3>
+              <h3 className="text-xl text-blue-500 font-semibold mb-2">Alice Johnson</h3>
               <p className="text-gray-600">Frontend Developer</p>
               <p className="text-gray-500">Passionate about creating seamless user experiences.</p>
             </div>
@@ -113,7 +111,7 @@ export default function Home() {
                 alt="Brian Smith"
                 className="w-24 h-24 rounded-full mx-auto mb-4"
               />
-              <h3 className="text-xl font-semibold mb-2">Brian Smith</h3>
+              <h3 className="text-xl text-blue-500 font-semibold mb-2">Brian Smith</h3>
               <p className="text-gray-600">Backend Developer</p>
               <p className="text-gray-500">Expert in database management and server-side logic.</p>
             </div>
@@ -124,7 +122,7 @@ export default function Home() {
                 alt="Catherine Lee"
                 className="w-24 h-24 rounded-full mx-auto mb-4"
               />
-              <h3 className="text-xl font-semibold mb-2">Catherine Lee</h3>
+              <h3 className="text-xl text-blue-500 font-semibold mb-2">Catherine Lee</h3>
               <p className="text-gray-600">Machine Learning Engineer</p>
               <p className="text-gray-500">Focused on AI algorithms to enhance platform performance.</p>
             </div>
@@ -135,7 +133,7 @@ export default function Home() {
                 alt="David Kim"
                 className="w-24 h-24 rounded-full mx-auto mb-4"
               />
-              <h3 className="text-xl font-semibold mb-2">David Kim</h3>
+              <h3 className="text-xl text-blue-500 font-semibold mb-2">David Kim</h3>
               <p className="text-gray-600">UI/UX Designer</p>
               <p className="text-gray-500">Committed to delivering engaging and user-friendly designs.</p>
             </div>
@@ -165,7 +163,7 @@ export default function Home() {
               className="mb-4 w-full p-3 rounded"
             />
             <textarea
-              rows="4"
+             
               placeholder="Your Message"
               className="mb-4 w-full p-3 rounded"
             />
@@ -178,9 +176,10 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-6 bg-gray-800 text-center text-white">
-        <p className="text-sm">© 2024 FairHousing. All rights reserved.</p>
-        <p className="text-sm">Contact us: support@fairhousing.com | (123) 456-7890</p>
+        <p className="text-sm">© 2024 SubletSuffers. All rights reserved.</p>
+        <p className="text-sm">Contact us: support@SubletSuffers.com | (123) 456-7890</p>
       </footer>
     </div>
+  </>
   );
 }
