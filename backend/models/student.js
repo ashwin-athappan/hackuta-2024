@@ -50,6 +50,15 @@ const studentSchema = new Schema({
     },
     physicalAddresses: {
         type: String,
+    },
+    apartmentNumber: {
+        type: String,
+    },
+    roommates: {
+        type: Number,
+    },
+    distanceFromCampus: {
+        type: Number,
     }
 });
 

@@ -99,6 +99,11 @@ export default function AdminDashboard() {
     early: filteredTenants.filter(tenant => tenant.paymentPunctuality === "Early").length,
   };
 
+  const queryServer = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const q = e.target.value;
+    fetch(`http://127.0.0.1:5000/predict?q=${q}`)
+  };
+
   return (
     <>
       <Navbardb />
@@ -112,8 +117,8 @@ export default function AdminDashboard() {
                   type="text"
                   placeholder="Search for tenants..."
                   value={searchTerm}
-                  onChange={e => setSearchTerm(e.target.value)}
-                  className="w-full p-3 border border-gray-300 rounded"
+                  onChange={queryServer}
+                  className="w-full p-3 border border-gray-300 rounded text-black"
                 />
               </div>
             </div>

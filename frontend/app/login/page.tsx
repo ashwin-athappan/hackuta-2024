@@ -9,6 +9,39 @@ export default function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
+    const handleLogin = (e: React.MouseEvent<HTMLButtonElement>) => {
+        e.preventDefault();
+        if (!email || !password) {
+            alert("All fields are required");
+            return;
+        }
+
+        fetch("http://localhost:8080/api/login", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                email,
+                password,
+            }),
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                if (data.error) {
+                    alert(data.error);
+                    return;
+                }
+                localStorage.setItem("role", data.role);
+                localStorage.setItem("email", data.email);
+                if (data.role === "admin") {
+                    window.location.href = "/dboardadmin";
+                } else {
+                    window.location.href = "/dboarduser";
+                }
+            })
+    };
+
     return (
         <>
         <Navbar />
@@ -47,6 +80,7 @@ export default function Login() {
 
                     <div className="w-3/4 mb-12">
                         <button
+                            onClick={handleLogin}
                             type="submit"
                             className="py-4 bg-blue-900 w-full rounded text-blue-50 font-bold hover:bg-blue-700"
                         >

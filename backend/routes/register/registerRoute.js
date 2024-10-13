@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const Account = require('../../models/account');
-const bcrypt = require('bcryptjs');
 const Student = require("../../models/student");
+const Admin = require("../../models/admin");
 
 router.post('/', async (req, res) => {
     try {
@@ -11,12 +11,15 @@ router.post('/', async (req, res) => {
         if (existingAccount) {
             return res.status(400).send({error: 'Account already exists'});
         }
-        const encryptedPassword = await bcrypt.hash(password, 10);
-        const account = new Account({email, password: encryptedPassword, role});
+        const account = new Account({email, password, role});
         const createdAccount = await account.save();
         if (role === 'student') {
             const student = new Student({accountId: createdAccount._id, email, phone, firstName, lastName});
             await student.save();
+        } else if (role === 'admin') {
+            console.log("Admin account creation");
+            const admin = new Admin({accountId: createdAccount._id, email, phone, firstName, lastName});
+            await admin.save();
         }
         return res.status(201).send({email: account.email});
     } catch (error) {
