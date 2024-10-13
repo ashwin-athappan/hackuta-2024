@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JetClientState">
+    <option name="draftsState">
+      <draftsState>
+        <option name="requests">
+          <list>
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;firstName&quot;: &quot;John&quot;,&#10;  &quot;lastName&quot;: &quot;Doe&quot;,&#10;  &quot;age&quot;: 25,&#10;  &quot;email&quot;: &quot;johndeo@gmail.com&quot;,&#10;  &quot;phone&quot;: &quot;657-458-9875&quot;,&#10;  &quot;sevisId&quot;: &quot;N78496&quot;,&#10;  &quot;physicalAddress&quot;: {&#10;    &quot;street&quot;: &quot;721 W Mitchell Cir&quot;,&#10;    &quot;apt&quot;: &quot;1015&quot;,&#10;    &quot;city&quot;: &quot;Arlington&quot;,&#10;    &quot;state&quot;: &quot;Texas&quot;,&#10;    &quot;zip&quot;: &quot;76013&quot;&#10;  }&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="c7489f5e-dfb2-49ef-a3cb-84babedf9a79" />
+              <option name="method" value="GET" />
+              <option name="name" value="Student" />
+            </requestState>
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;email&quot;: &quot;abc@gmail.com&quot;,&#10;  &quot;password&quot;: &quot;123456&quot;,&#10;  &quot;role&quot;: &quot;admin&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="7912d00c-77fa-43e3-813b-7a7b4e33b667" />
+              <option name="method" value="POST" />
+              <option name="name" value="RegAccount" />
+              <option name="url" value="http://localhost:8080/api/register" />
+            </requestState>
+            <requestState>
+              <option name="id" value="3cae100c-82d8-4250-b4f3-1dd4fc41fca7" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+            </requestState>
+          </list>
+        </option>
+      </draftsState>
+    </option>
+    <option name="id" value="0758dff8-088b-42e1-b2dc-065ee9194a78" />
+    <option name="version" value="4" />
+  </component>
+</project>

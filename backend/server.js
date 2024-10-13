@@ -1,7 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const connectDB = require('./db/connectDB');
-const studentRouter = require('./routes/students/studentRoute');
+
+const registerRoute = require('./routes/register/registerRoute');
 
 const app = express();
 const port = 8080;
@@ -19,7 +20,7 @@ const startServer = () => {
 app.use(express.json());
 app.use(cors());
 
-app.use('/students', studentRouter);
+app.use('/api/register', registerRoute);
 
 app.get('/', async (req, res) => {
     return res.send("Hello");
