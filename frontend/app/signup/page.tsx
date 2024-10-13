@@ -1,7 +1,7 @@
 "use client";
 
 import React, {useState} from 'react';
-import Joi from 'joi';
+import Navbar from '../_components/Navbar/Navbar';
 
 interface FormData {
     firstName: string;
@@ -77,6 +77,8 @@ export default function HomePage() {
     };
 
     return (
+        <>
+        <Navbar />
         <div className="bg-govt_bg min-h-screen bg-cover bg-center">
             <div className="flex justify-center container mx-auto my-auto w-screen h-screen items-center flex-col">
                 <form
@@ -188,5 +190,6 @@ export default function HomePage() {
                 </form>
             </div>
         </div>
+        </>
     );
 }

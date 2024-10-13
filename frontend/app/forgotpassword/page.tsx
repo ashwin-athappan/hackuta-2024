@@ -1,10 +1,11 @@
 import Link from "next/link";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBackward} from "@fortawesome/free-solid-svg-icons";
-
+import Navbar from "../_components/Navbar/Navbar";
 
 export default function ForgotPassword() {
     return (
+        <><Navbar />
         <div className="bg-govt_bg min-h-screen bg-cover bg-center">
             <div className="flex justify-center container mx-auto my-auto w-screen h-screen items-center flex-col">
                 <div className="w-full md:w-3/4  lg:w-1/2 flex flex-col items-center bg-slate-50 rounded-md pt-12">
@@ -15,7 +16,7 @@ export default function ForgotPassword() {
                 <div className="text-blue-700 items-center">
                     <svg className="w-10 h-10 mx-auto pb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                          xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                               d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                     </svg>
                     <div className="text-3xl text-center pb-3">Send a Password Reset Email</div>
@@ -37,5 +38,6 @@ export default function ForgotPassword() {
                 </div>
             </div>
         </div>
+    </>
     );
 }
