@@ -3,6 +3,11 @@ const mongoose = require("mongoose");
 const crypto = require('crypto');
 
 const studentSchema = new Schema({
+    accountId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'account',
+        required: true,
+    },
     firstName: {
         type: String,
         required: true,
@@ -13,7 +18,6 @@ const studentSchema = new Schema({
     },
     age: {
         type: Number,
-        required: true,
     },
     email: {
         type: String,
@@ -25,11 +29,10 @@ const studentSchema = new Schema({
     },
     sevisId: {
         type: String,
-        required: crypto.randomBytes(10).toString('hex'),
+        default: crypto.randomBytes(10).toString('hex'),
     },
     passportNumber: {
         type: String,
-        required: true,
     },
     i94Number: {
         type: String,
@@ -37,7 +40,6 @@ const studentSchema = new Schema({
     },
     dateOfEntry: {
         type: Date,
-        required: true,
     },
     hasLease: {
         type: Boolean,
@@ -48,7 +50,6 @@ const studentSchema = new Schema({
     },
     physicalAddresses: {
         type: String,
-        required: true,
     }
 });
 
